@@ -1,0 +1,231 @@
+@import "../app.scss";
+
+.contact {
+    height: 100%;
+    padding-top: 100px;
+    background: linear-gradient(180deg, #363683 0%, #0C0C1D 17.41%);
+
+    .wrapper {
+        max-width: 1366px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        height: 100%;
+
+        @include extraSmall {
+            width: 100%;
+            flex-direction: column;
+            gap: 0px;
+        }
+
+        @include small {
+            padding: 20px;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        @include large {
+            padding: 20px;
+            width: unset;
+            max-width: 1366px;
+            flex-direction: row;
+            gap: 50px;
+        }
+
+        .textContainer {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            @media only screen and (max-width: 400px) {
+                margin-top: unset;
+                line-height: 0.8;
+                margin-top: 20px;
+            }
+
+            @include extraSmall {
+                gap: 10px;
+                text-align: center;
+                align-items: center;
+                margin-top: 140px;
+            }
+
+            @include small {
+                gap: 30px;
+                text-align: center;
+                align-items: center;
+            }
+
+            @include large {
+                gap: 40px;
+                text-align: unset;
+                align-items: unset;
+                margin-top: unset;
+            }
+            
+            .titleContainer {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                @include extraSmall {
+                    display: flex;
+                }
+
+                h2 {
+                    font-size: 24px;
+                    color: #BDBDE4;
+                    font-weight: bold;
+
+                    @include extraSmall {
+                        font-size: 20px;
+                        gap: 10px;
+                    }
+
+                    @include small {
+                        font-size: 24px;
+                    }
+
+                    @include large {
+                        font-size: 24px;
+                    }
+                }
+    
+                hr {
+                    width: 300px;
+                    border: none;
+                    border-top: 2px solid #BDBDE4;
+
+                    @include extraSmall {
+                        width: 150px;
+                    }
+                }
+            }
+    
+            h1 {
+                font-size: 96px;
+                line-height: 88px;
+
+                @include extraSmall {
+                    font-size: 32px;
+                }
+
+                @include small {
+                    font-size: 68px;
+                }
+                
+                @include large {
+                    font-size: 92px;
+                }
+            }
+    
+            .socials {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                @include extraSmall {
+                    gap: 20px;
+                }
+
+                @include small {
+                    gap: 20px;
+                }
+
+                @include large {
+                    gap: 30px;
+                }
+
+                a {
+                    font-size: 20px;
+                    font-weight: 300;
+
+                    @include extraSmall {
+                        font-size: 18px;
+                    }
+
+                    @include small {
+                        font-size: 20px;
+                    }
+
+                    @include large {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    
+        .formContainer {
+            flex: 1;
+            padding-top: 100px;
+
+            @include extraSmall {
+                padding-top: unset;
+                padding: 50px;
+                width: 100%;
+            }
+
+            @include small {
+                padding: 50px;
+                width: 100%;
+            }
+
+            @include large {
+                padding: unset;
+                width: unset;
+                padding-top: 100px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 28px;
+    
+                input, textarea {
+                    padding: 20px;
+                    background-color: transparent;
+                    border: 2px solid #BDBDE4;
+                    color: lightgray;
+
+                    @include extraSmall {
+                        padding: 10px;
+                    }
+
+                    @include small {
+                        padding: 10px;
+                    }
+
+                    @include large {
+                        padding: 20px;
+                    }
+                }
+                
+                button {
+                    padding: 20px;
+                    border: none;
+                    background-color: #BDBDE4;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-weight: 500;
+
+                    @include extraSmall {
+                        padding: 10px;
+                    }
+
+                    @include small {
+                        padding: 10px;
+                    }
+
+                    @include large {
+                        padding: 20px;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}

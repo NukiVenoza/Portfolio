@@ -1,0 +1,35 @@
+@import "../app.scss";
+
+.cursor {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #BDBDE4;
+    position: fixed;
+    z-index: 999;
+    background-color: transparent;
+
+    @include extraSmall {
+        display: none;
+    }
+
+    @include small {
+        display: none;
+    }
+
+    @include medium {
+        display: none;
+    }
+}
+
+// .cursor:after {
+//     content: '\2022';
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%) rotate(90deg);
+//     font-size: 15px; 
+//     letter-spacing: 4px;
+//     margin-top: 2px;
+//     color: #BDBDE4;
+//   }

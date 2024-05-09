@@ -1,0 +1,172 @@
+@import "../app.scss";
+
+.about {
+    background: linear-gradient(180deg, #363683 0%, #0C0C1D 18.32%);
+    padding-top: 100px;
+    height: 100%;
+ 
+    position: relative;
+
+    .wrapper {
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include extraSmall {
+            padding: 20px;   
+        }
+
+        @include small {
+            padding: 20px;
+        }
+
+        @include medium {
+            padding: 20px;
+        }
+
+        .headingContainer {
+            flex: 2;
+            font-size: 48px;
+            width: 40%;
+            font-weight: bold;
+
+            @include extraSmall {
+                font-size: 36px;
+                width: 100%;
+            }
+
+            @include small {
+                width: 50%;
+            }
+
+            @include medium {
+                width: 50%;
+            }
+
+            @include large {
+                width: 40%;
+                font-size: 48px;
+            }
+        }
+
+        .expertiseContainer {
+            flex: 2;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 50px;
+            
+            @include extraSmall {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .box {
+                padding: 50px;
+                width: 50%;
+                border: 2px solid #BDBDE4;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                text-align: left;
+                align-items: left;
+
+                @include extraSmall {
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px;
+                    padding: 10px;
+                    width: 100%;
+                }
+
+                h2 {
+                    margin: 0 auto;
+                    font-size: 40px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+
+                    @include extraSmall {
+                        font-size: 24px;
+                        justify-content: center;
+                    }
+                    
+                }
+
+                p {
+                    margin: 0 auto;
+                    width: 58%;
+                    font-size: 20px;
+                    font-weight: 400;
+
+                    @include extraSmall {
+                        font-size: 16px;
+                        justify-content: center;
+                    }
+
+                    @include medium {
+                        width: 100%;
+                        justify-content: center;
+                    }
+
+                    @include large {
+                        width: 58%;
+                        font-size: 20px;
+                        justify-content: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    .textContainer {
+        flex: 1;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        position: absolute;
+        top: 320px;
+        right: 0;
+
+        @include extraSmall {
+            display: none;
+        }
+
+        @include medium {
+            top: 420px;
+        }
+
+        @include large {
+            top: 320px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #BBBABA;
+            text-align: right;
+            font-weight: bold;
+
+        }
+
+        hr {
+            width: 400px;
+            border: none;
+            border-top: 1px solid #BBBABA;
+
+
+            @include medium {
+                width: 150px;
+            }
+
+            @include large {
+                width: 400px;
+            }
+        }
+    }
+
+    
+}

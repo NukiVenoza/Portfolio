@@ -1,0 +1,187 @@
+@import "../app.scss";
+
+.home {
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg, #0C0C1D 81.29%, #363683 100%);
+    position: relative;
+    padding-top: 200px;
+    
+    .wrapper {
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
+
+        @include extraSmall {
+            padding: 20px;
+        }
+
+        @include small {
+            padding: 20px;
+        }
+
+        .textContainer {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            padding-bottom: 150px;
+
+            @include extraSmall {
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+            }
+
+            @include small {
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+            }
+
+            @include medium {
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+            }
+
+            @include large {
+                height: 100%;
+                width: 50%;
+                flex-direction: column;
+                gap: 40px;
+                align-items: unset;
+                text-align: left;
+            }
+
+            h1 {
+                font-size: 128px;
+                letter-spacing: 12px;
+
+                @include extraSmall {
+                    font-size: 48px;
+                }
+
+                @include small {
+                    font-size: 96px;
+                }
+
+                @include medium {
+                    font-size: 96px;
+                }
+
+                @include large {
+                    font-size: 128px;
+                }
+            }
+
+            h2 {
+                font-size: 40px;
+                color: #BDBDE4;
+
+                @include extraSmall {
+                    font-size: 20px;
+                }
+
+                @include small {
+                    font-size: 36px;
+                }
+
+                @include medium {
+                    font-size: 36px;
+                }
+
+                @include large {
+                    font-size: 40px;
+                }
+            }
+
+            img {
+                width: 50px;
+            }
+        }
+    }
+
+    .imageContainer {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        padding-top: 100px;
+
+        @include extraSmall {
+            height: 60%;
+            width: 100%;
+            top: unset;
+            bottom: 0;
+        }
+
+        @include small {
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            height: 40%;
+            width: 100%;
+            top: unset;
+            bottom: 0;
+        }
+
+        @include medium {
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            height: 40%;
+            width: 100%;
+            top: unset;
+            bottom: 0;
+        }
+
+        @include large {
+            display: unset;
+            align-items: unset;
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: unset;
+        }
+
+        img {
+            width: 100%;
+            object-fit: contain;
+            mix-blend-mode: luminosity;
+
+            @include small {
+                width: 70%;
+            }
+
+            @include medium {
+                width: 70%;
+            }
+
+            @include large {
+                width: 100%;
+            }
+        }
+    }
+
+    .slidingTextContainer {
+        position: absolute;
+        font-size: 4vh;
+        bottom: 25px;
+        white-space: nowrap;
+        color: rgba(255, 255, 255, 0.3);
+        width: 30%;
+        font-weight: bold;
+    }
+}
