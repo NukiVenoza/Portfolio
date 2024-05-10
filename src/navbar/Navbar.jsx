@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="wrapper">
         <motion.span variants={variants} initial="initial" animate="animate">
-          Nuki Venoza
+          <a href="#Home">Nuki Venoza</a>
         </motion.span>
 
         <div className="menus">

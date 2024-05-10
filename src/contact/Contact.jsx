@@ -60,7 +60,7 @@ const Contact = () => {
             <a href="https://www.linkedin.com/in/nukivenoza/" target="_blank">LinkedIn</a>
             <a href="https://www.instagram.com/nuki.venoza/" target="_blank">Instagram</a>
             <a href="https://github.com/NukiVenoza" target="_blank">Github</a>
-            <a href="https://drive.google.com/file/d/1gsbr8ENtZ-Ps_wUKIMCanyaH9Q7mpJYS/view?usp=sharing" target="_blank">Resume</a>
+            <a href="https://drive.google.com/file/d/1Gw01r4XRThV3treQDT0katIvOnUkw1Nh/view?usp=sharing" target="_blank">Click here to see my Resume</a>
           </motion.div>
         </motion.div>
 

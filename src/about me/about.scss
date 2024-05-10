@@ -129,7 +129,8 @@
         gap: 20px;
 
         position: absolute;
-        top: 320px;
+        // top: 320px;
+        top: 40%;
         right: 0;
 
         @include extraSmall {
@@ -137,11 +138,11 @@
         }
 
         @include medium {
-            top: 420px;
+            top: 42%;
         }
 
         @include large {
-            top: 320px;
+            // top: 320px;
         }
 
         p {
